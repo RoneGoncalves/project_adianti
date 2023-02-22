@@ -2,11 +2,7 @@
     <menuitem label='ADM'>
         <icon>fas:home fa-fw</icon>
         <menu>
-            <menuitem label='Cadastros'>
-                  <icon>fas:tachometer-alt fa-fw</icon>
-                  <action>PessoaForm</action>
-            </menuitem>
-            <menuitem label='Cadastros List'>
+            <menuitem label='Cad Pessoas'>
                   <icon>fas:tachometer-alt fa-fw</icon>
                   <action>PessoaList</action>
             </menuitem>

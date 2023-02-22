@@ -45,7 +45,9 @@ class PessoaList extends Adianti\Base\TStandardList{
         
         $btn = $this->form->addAction(_t('Find'), new TAction(array($this, 'onSearch')), 'fa:search');
         $btn->class = 'btn btn-sm btn-primary';
-        $this->form->addAction('Novo Cadastro',  new TAction(array('PessoaForm', 'onClear')), 'fa:plus green');
+        $this->form->addActionLink('Novo Cadastro',  new TAction(array('PessoaForm', 'onClear')), 'fa:plus green');
+
+        // $this->form->addActionLink(_t('New'),  new TAction(array('PessoaForm', 'onEdit')), 'fa:plus green');
         
         // creates a DataGrid
         $this->datagrid = new BootstrapDatagridWrapper(new TDataGrid);
